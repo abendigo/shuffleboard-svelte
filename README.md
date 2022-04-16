@@ -44,3 +44,10 @@ mv node_modules/.bin/cucumber-js node_modules/.bin/cucumber.js
 > https://github.com/cucumber-examples/cucumber-js-examples/compare/feat/typescript-esm-target?expand=1
 
 > https://github.com/cucumber/screenplay.js
+
+
+### Storybook
+
+```bash
+npm run storybook
+```
