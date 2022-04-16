@@ -1,18 +1,15 @@
-# create-svelte
+## Technologies
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+- Svelte Kit
+- Typescript
+- ESLint
+- Prettier
+- Playwright
+- Cucumber
+- Screenplay
+- Tailwind
+- Storybook
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte
-
-# create a new project in my-app
-npm init svelte my-app
-```
 
 ## Developing
 
