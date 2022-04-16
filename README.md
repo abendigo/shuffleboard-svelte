@@ -36,3 +36,14 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+## Testing (with Cucumber, Playwright, and Screenplay)
+
+> Rename Cucumber
+```bash
+mv node_modules/.bin/cucumber-js node_modules/.bin/cucumber.js
+```
+
+> https://github.com/cucumber-examples/cucumber-js-examples/compare/feat/typescript-esm-target?expand=1
+
+> https://github.com/cucumber/screenplay.js
