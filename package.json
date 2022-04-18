@@ -1,5 +1,6 @@
 {
   "name": "shuffleboard-svelte",
+  "license": "MIT",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
@@ -9,6 +10,10 @@
     "prepare": "svelte-kit sync",
     "test:playwright": "playwright test",
     "test": "NODE_OPTIONS=\"--loader ts-node/esm\" cucumber.js",
+    "cucumber": "cucumber-js",
+    "cucumber-http": "cucumber-js --profile http",
+    "cucumber-dom": "cucumber-electron --profile dom --stylesheet features/src/components/style.css ",
+    "cucumber-dom-http": "cucumber-electron --profile domHttp --stylesheet features/src/components/style.css ",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
@@ -19,6 +24,7 @@
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@cucumber/cucumber": "^8.0.0",
+    "@cucumber/screenplay": "^5.1.0",
     "@playwright/test": "^1.21.0",
     "@storybook/addon-actions": "^6.4.22",
     "@storybook/addon-essentials": "^6.4.22",
@@ -49,5 +55,9 @@
     "tslib": "^2.3.1",
     "typescript": "~4.6.2"
   },
-  "type": "module"
+  "type": "module",
+  "engines": {
+    "npm": ">= 8",
+    "yarn": "please-use-npm"
+  }
 }
