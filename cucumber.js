@@ -1,11 +1,12 @@
 const commonOptions = {
+  publishQuiet: true,
   import: ['features/**/*.ts']
 };
 
 export default {
   ...commonOptions,
   worldParameters: {
-    tasks: 'features/support/tasks/session',
+    tasks: `features/support/tasks/session`,
     sessions: 'Domain'
   }
 };
@@ -13,7 +14,7 @@ export default {
 export const http = {
   ...commonOptions,
   worldParameters: {
-    tasks: 'features/support/tasks/session',
+    tasks: `features/support/tasks/session`,
     sessions: 'Http'
   }
 };
